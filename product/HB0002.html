@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.css">
+    <!--Fontawesome Css-->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+    <!--Custom Css-->
+    <link rel="stylesheet" href="../css/product.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Menu Start-->
+    <div class="menu-product">
+        <div class="logo-product">
+            <a href="../index.html">Studio Shoni</a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">Subscription</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="cart-menu">
+            <a href="#"><i class="fa-light fa-cart-shopping"></i></a>
+            <a href="#" onclick="openNav()"><i class="fa-light fa-bars"></i></a>
+        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Shop</a>
+                <a href="#">Subscription</a>
+            </div>
+        </div>
+    </div>
+    <!--Menu End-->
+    <!--Card Product Start-->
+    <div class="card-wrapper">
+        <div class="card">
+            <!-- card left -->
+            <div class="product-imgs">
+                <div class="img-display">
+                    <div class="img-showcase">
+                        <img src="slide-img/2/1.jpg">
+                        <img src="slide-img/2/2.jpg">
+                        <img src="slide-img/2/3.jpg">
+                        <img src="slide-img/2/4.jpg">
+                        <img src="slide-img/2/5.jpg">
+                    </div>
+                </div>
+                <div class="img-select">
+                    <div class="img-item">
+                        <a href="#" data-id="1">
+                            <img src="slide-img/2/1.jpg">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="2">
+                            <img src="slide-img/2/2.jpg">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="3">
+                            <img src="slide-img/2/3.jpg">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="4">
+                            <img src="slide-img/2/4.jpg">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="5">
+                            <img src="slide-img/2/5.jpg">
+                        </a>
+                    </div>
+                </div>
+                <!--Khung viết bình luận : Start-->
+                <div class="postbox__comment">
+                    <h3>Comments</h3>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-xxl-6 col-xl-6 col-lg-6">
+                                <div class="postbox__comment-input">
+                                    <input type="text" placeholder="Your name here...">
+                                </div>
+                            </div>
+                            <div class="col-xxl-12">
+                                <div class="postbox__comment-input">
+                                    <textarea placeholder="Message here..."></textarea>
+                                </div>
+                            </div>
+                            <div class="col-xxl-12">
+                                <div class="postbox__comment-btn">
+                                    <button type="submit" class="tp-btn">Comment</button>
+                                    <div class="tooltip"><i class="fa-solid fa-circle-question question"></i>
+                                        <span class="tooltiptext">こちらにコメントを記入してください</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--Khung viết bình luận : End-->
+            </div>
+            <!-- card right -->
+            <div class="product-content">
+                <h2 class="product-title">Repositionable Dry Erase Monthly Calendar || Office Removable Damage Free Dorm
+                    Room Decor Refrigerator Fridge Wall 03-018-006</h2>
+                <hr>
+                <br>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.7(21)</span>
+                </div>
+
+                <div class="product-price">
+                    <p class="new-price">New Price: <span>$15</span></p>
+                </div>
+
+                <div class="product-detail">
+                    <h2>about this item: </h2>
+                    <p>Our removable and repositionable dry erase product line is the perfect damage free solution.
+                        Great for use on walls, mirrors, windows, doors, desktops, refrigerators, cabinets - virtually
+                        any smooth, clean, indoor surface. Thick high-grade unique material resists tearing and allows
+                        you to remove and re-stick multiple times - no tape or tack required.</p>
+                </div>
+
+                <div class="purchase-info">
+                    <input type="number" min="0" value="1">
+                    <button type="button" class="add-btn">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+
+                <div class="product-details">
+                    <button class="accordion">Highlights <i class="fa-sharp fa-regular fa-plus"></i></button>
+                    <div class="panel">
+                        <p>Handmade</p>
+                        <p>Materials: Paper, Ink, Gold wire</p>
+                    </div>
+                    <button class="accordion">Description <i class="fa-sharp fa-regular fa-plus"></i></button>
+                    <div class="panel">
+                        <p>Our removable and repositionable dry erase product line is the perfect damage free solution.
+                            Great for use on walls, mirrors, windows, doors, desktops, refrigerators, cabinets -
+                            virtually any smooth, clean, indoor surface. Thick high-grade unique material resists
+                            tearing and allows you to remove and re-stick multiple times - no tape or tack required.
+                            <br><br>
+                        <ul style="margin-left: 30px;">
+                            <li><p>Dry erase film is not magnetic. Magnets can be used with it if you stick it to a
+                                magnetic surface.</p></li>
+                            <li><p>Optional full color set of dry erase markers includes red, orange, yellow, green, blue,
+                                and purple.</p></li>
+                        </ul>
+                        <br>
+                       <p> We guarantee our markers will wipe clean from our boards every time. We do not recommend
+                        using other brand markers with our boards, and we cannot guarantee the quality of ink or
+                        ability to erase in other brands. Using another brand marker is done at your own risk.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Card Product End-->
+
+    </div>
+     <!--Footer Start-->
+     <footer>
+
+        <div class="box-color-bottom">
+
+            <div class="box-color-footer-3">
+                <div class="box-color-footer">
+                    <img src="../img/footer.jpg" alt="">
+                </div>
+                <div class="footer-menu-main">
+                    <div class="shop-footer footer-tittle">
+                        <h3>Shop</h3>
+                        <ul>
+                            <a href="#">
+                                <li>Gift cards</li>
+                            </a>
+                            <a href="#">
+                                <li>Sitemap</li>
+                            </a>
+                            <a href="#">
+                                <li>Etsy blog</li>
+                            </a>
+                            <a href="#">
+                                <li>Etsy United Kingdom</li>
+                            </a>
+                            <a href="#">
+                                <li>Etsy Germany</li>
+                            </a>
+                            <a href="#">
+                                <li>Etsy Canada</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="sell-footer footer-tittle">
+                        <h3>Sell</h3>
+                        <ul>
+                            <a href="#">
+                                <li>Sell on Etsy</li>
+                            </a>
+                            <a href="#">
+                                <li>Teams</li>
+                            </a>
+                            <a href="#">
+                                <li>Forums</li>
+                            </a>
+                            <a href="#">
+                                <li>Affiliates</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="about-footer footer-tittle">
+                        <h3>About</h3>
+                        <ul>
+                            <a href="#">
+                                <li>Etsy, Inc.</li>
+                            </a>
+                            <a href="#">
+                                <li>Policies</li>
+                            </a>
+                            <a href="#">
+                                <li>Investors</li>
+                            </a>
+                            <a href="#">
+                                <li>Careers</li>
+                            </a>
+                            <a href="#">
+                                <li>Press</li>
+                            </a>
+                            <a href="#">
+                                <li>Impact</li>
+                            </a>
+                            <a href="#">
+                                <li>Legal imprint</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="information-footer footer-tittle">
+                        <h3 style="font-size: 35px;">Studio Shoni</h3>
+                        <ul>
+                            <a href="#">
+                                <li>Help Center</li>
+                            </a>
+                            <a href="#">
+                                <li>Privacy settings</li>
+                            </a>
+                        </ul>
+                        <div class="soccial-footer">
+                            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-pinterest"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                        </div>
+                        <div class="map-footer">
+                            <p><a href="#">〒901-2112 <br> 沖縄県浦添市沢岻２丁目１７−1 OCCコンピュータビル</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="bottom-left-footer">
+                <i class="fa-thin fa-earth-americas"></i>
+                <p><i style="font-size: 15px;">© 2023 Etsy, Inc.Themes by <a href="#">CodingDungOCC</a></i></p>
+            </div>
+            <div class="bottom-right-footer">
+                <div><i><a href="#">Terms of</a></i></div>
+                <div><i><a href="#">Use Privacy</a></i></div>
+                <div><i><a href="#">Interest-based ads</a></i></div>
+                <div><i><a href="#">Regions</a></i></div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer End-->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

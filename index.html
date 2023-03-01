@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website Design</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.css">
+    <!--Fontawesome Css-->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+    <!--Custom Css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Jquery Js-->
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="main-menu">
+            <div class="logo">
+                <a href="#">Studio Shoni</a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#">Subscription</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="cart-menu" id="count">
+                <a href="check-out-cart.html"><i class="fa-light fa-cart-shopping"><span>1</span></i></a>
+                
+                
+                <a href="#" onclick="openNav()"><i class="fa-light fa-bars"></i></a>
+            </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Subscription</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-title">
+            <h1>Best Furniture for Your Home</h1>
+            <p>Minimalist Interior to Maximize Your Room</p>
+            <button class="top-btn" value="More">MORE</button>
+        </div>
+    </header>
+    <section class="section-1">
+        <div class="title-section-2">
+            <h3>Recently viewed & more</h3>
+            <p>Based on your recent activity</p>
+        </div>
+
+        <!--Slide Main Start-->
+        <div class="container swiper">
+            <div class="slide-container">
+                <div class="card-wrapper swiper-wrapper">
+                    <!--Slide 1 start-->
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <a href="product/HB0001.html"><img src="img/slide/1.jpg" alt="" /></a>
+                        </div>
+                        <div class="profile-details">
+                            <div class="name-price">
+                                <a href="#">
+                                    <h3 class="name">Black and White Wall Art | Neutral Wall Art | Photo Wall Art</h3>
+                                </a>
+                                <div class="star-ranking">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                </div>
+                                <h4 class="price">10$</h4>
+                                <button class="btn-card">Add Cart <i class="fa-regular fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Slide 1 end-->
+                    <!--Slide 2 start-->
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <a href="#"><img src="img/slide/2.jpg" alt="" /></a>
+                        </div>
+                        <div class="profile-details">
+                            <div class="name-price">
+                                <a href="#">
+                                    <h3 class="name">Black and White Wall Art | Neutral Wall Art | Photo Wall Art</h3>
+                                </a>
+                                <div class="star-ranking">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                </div>
+                                <h4 class="price">25$</h4>
+                                <button class="btn-card">Add Cart <i class="fa-regular fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Slide 2 end-->
+                    <!--Slide 3 start-->
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <a href="#"><img src="img/slide/3.jpg" alt="" /></a>
+                        </div>
+                        <div class="profile-details">
+                            <div class="name-price">
+                                <a href="#">
+                                    <h3 class="name">Gray White Wall Art, Cross, Kitchen Decor, Minimalist Wall Art</h3>
+                                </a>
+                                <div class="star-ranking">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                </div>
+                                <h4 class="price">35$</h4>
+                                <button class="btn-card">Add Cart <i class="fa-regular fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Slide 3 end-->
+                    <!--Slide 4 start-->
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <a href="#"><img src="img/slide/4.jpg" alt="" /></a>
+                        </div>
+                        <div class="profile-details">
+                            <div class="name-price">
+                                <a href="#">
+                                    <h3 class="name">Black and White Gallery Wall Print Set</h3>
+                                </a>
+                                <div class="star-ranking">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                </div>
+                                <h4 class="price">15$</h4>
+                                <button class="btn-card">Add Cart <i class="fa-regular fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Slide 4 end-->
+
+                    <!--Slide 5 start-->
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <a href="#"><img src="img/slide/5.jpg" alt="" /></a>
+                        </div>
+                        <div class="profile-details">
+                            <div class="name-price">
+                                <a href="#">
+                                    <h3 class="name">Gray White Wall Art, Cross, Kitchen Decor, Minimalist Wall Art</h3>
+                                </a>
+                                <div class="star-ranking">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                </div>
+                                <h4 class="price">50$</h4>
+                                <button class="btn-card">Add Cart <i class="fa-regular fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Slide 5 end-->
+                    <!--Slide 6 start-->
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <a href="#"><img src="img/slide/6.jpg" alt="" /></a>
+                        </div>
+                        <div class="profile-details">
+                            <div class="name-price">
+                                <a href="#">
+                                    <h3 class="name">Wedding Guest Book, Wood Guest Book, Guest Book</h3>
+                                </a>
+                                <div class="star-ranking">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                </div>
+                                <h4 class="price">25$</h4>
+                                <button class="btn-card">Add Cart <i class="fa-regular fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Slide 6 end-->
+                    <!--Slide 7 start-->
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <a href="#"><img src="img/slide/7.jpg" alt="" /></a>
+                        </div>
+                        <div class="profile-details">
+                            <div class="name-price">
+                                <a href="#">
+                                    <h3 class="name">Wedding favor, Wedding tags, Wedding favor tags, Gold tags</h3>
+                                </a>
+                                <div class="star-ranking">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-duotone fa-star"></i>
+                                </div>
+                                <h4 class="price">35$</h4>
+                                <button class="btn-card">Add Cart <i class="fa-regular fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Slide 7 end-->
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!--Slide Main End-->
+
+    <!--Post Main Start-->
+    <section class="post-main">
+        <div class="title-section-2">
+            <h3>Featured items</h3>
+            <p>The store's best-selling products</p>
+        </div>
+        <div class="post-body">
+            <div class="post-img">
+                <a href="product/HB0002.html"><img src="img/post/1.jpg" alt=""></a>
+            </div>
+            <div class="post-title">
+                <div class="post-title-1">
+                    <a href="product/HB0002.html">
+                        <h3>Repositionable Dry Erase Monthly Calendar || Office Removable Damage Free Dorm Room Decor
+                            Refrigerator Fridge Wall 03-018-006.</h3>
+                    </a>
+                    <div class="date-post">
+                        <p>2023/02/15 </p>
+                        <p>Write post :<a href="#">Admin</a></p>
+                        <p>Views :<i class="fa-solid fa-eye"></i> 1k</p>
+
+                    </div>
+                </div>
+                <hr>
+                <p>Our removable and repositionable dry erase product line is the perfect damage free solution. Great
+                    for use on walls, mirrors, windows, doors, desktops, refrigerators, cabinets - virtually any smooth,
+                    clean, indoor surface. Thick high-grade unique material resists tearing and allows you to remove and
+                    re-stick multiple times - no tape or tack required.</p>
+                <a href="product/HB0002.html">More...</a>
+            </div>
+        </div>
+    </section>
+    <!--Post : End-->
+
+    <!--Product Card-->
+    <section class="product-card-main">
+        <div class="title-section-4">
+            <h3>Product</h3>
+            <p>Shop by interest</p>
+        </div>
+        <div class="product-card-wapper">
+            <div class="product-card-body" id="cart-body">
+                <!--Card 1 : Start-->
+                <div class="product-card-box">
+                    <div class="card-img">
+                        <a href="product/HB0001.html"><img src="img/card/1.png" alt="" class="img"></a>
+                    </div>
+                    <div class="card-title">
+                        <a href="product/HB0001.html">
+                            <h5>Set 3 of Basket Wall Decor Boho Wall Decor</h5>
+                        </a>
+                        <div class="star-ranking">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-duotone fa-star"></i>
+                        </div>
+                        <div class="card-price">
+                            <p>$35 <span>/ Free ship</span></p>
+                            <a href="#"><i class="fa-regular fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 1 : End-->
+                <!--Card 2 : Start-->
+                <div class="product-card-box">
+                    <div class="card-img">
+                        <img src="img/card/2.png" alt="" class="img">
+                    </div>
+                    <div class="card-title">
+                        <a href="#">
+                            <h5>Set 3 of Basket Wall Decor Boho Wall Decor</h5>
+                        </a>
+                        <div class="star-ranking">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-duotone fa-star"></i>
+                        </div>
+                        <div class="card-price">
+                            <p>$35 <span>/ Free ship</span></p>
+                            <a href=""><i class="fa-regular fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 2 : End-->
+                <!--Card 3 : Start-->
+                <div class="product-card-box">
+                    <div class="card-img">
+                        <img src="img/card/3.png" alt="" class="img">
+                    </div>
+                    <div class="card-title">
+                        <a href="#">
+                            <h5>Set 3 of Basket Wall Decor Boho Wall Decor</h5>
+                        </a>
+                        <div class="star-ranking">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-duotone fa-star"></i>
+                        </div>
+                        <div class="card-price">
+                            <p>$35 <span>/ Free ship</span></p>
+                            <a href=""><i class="fa-regular fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 3 : End-->
+                <!--Card 4 : Start-->
+                <div class="product-card-box">
+                    <div class="card-img">
+                        <img src="img/card/4.png" alt="" class="img">
+                    </div>
+                    <div class="card-title">
+                        <a href="#">
+                            <h5>Set 3 of Basket Wall Decor Boho Wall Decor</h5>
+                        </a>
+                        <div class="star-ranking">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-duotone fa-star"></i>
+                        </div>
+                        <div class="card-price">
+                            <p>$35 <span>/ Free ship</span></p>
+                            <a href=""><i class="fa-regular fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 4 : End-->
+                <!--Card 5 : Start-->
+                <div class="product-card-box">
+                    <div class="card-img">
+                        <img src="img/card/5.png" alt="" class="img">
+                    </div>
+                    <div class="card-title">
+                        <a href="#">
+                            <h5>Set 3 of Basket Wall Decor Boho Wall Decor</h5>
+                        </a>
+                        <div class="star-ranking">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-duotone fa-star"></i>
+                        </div>
+                        <div class="card-price">
+                            <p>$35 <span>/ Free ship</span></p>
+                            <a href=""><i class="fa-regular fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 5 : End-->
+                <!--Card 6 : Start-->
+                <div class="product-card-box">
+                    <div class="card-img">
+                        <img src="img/card/6.png" alt="" class="img">
+                    </div>
+                    <div class="card-title">
+                        <a href="#">
+                            <h5>Set 3 of Basket Wall Decor Boho Wall Decor</h5>
+                        </a>
+                        <div class="star-ranking">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-duotone fa-star"></i>
+                        </div>
+                        <div class="card-price">
+                            <p>$35 <span>/ Free ship</span></p>
+                            <a href=""><i class="fa-regular fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 6 : End-->
+                <!--Card 7 : Start-->
+                <div class="product-card-box">
+                    <div class="card-img">
+                        <img src="img/card/7.png" alt="" class="img">
+                    </div>
+                    <div class="card-title">
+                        <a href="#">
+                            <h5>Set 3 of Basket Wall Decor Boho Wall Decor</h5>
+                        </a>
+                        <div class="star-ranking">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-duotone fa-star"></i>
+                        </div>
+                        <div class="card-price">
+                            <p>$35 <span>/ Free ship</span></p>
+                            <a href=""><i class="fa-regular fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 7 : End-->
+                <!--Card 8 : Start-->
+                <div class="product-card-box">
+                    <div class="card-img">
+                        <img src="img/card/8.png" alt="" class="img">
+                    </div>
+                    <div class="card-title">
+                        <a href="#">
+                            <h5>Set 3 of Basket Wall Decor Boho Wall Decor</h5>
+                        </a>
+                        <div class="star-ranking">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-duotone fa-star"></i>
+                        </div>
+                        <div class="card-price">
+                            <p>$35 <span>/ Free ship</span></p>
+                            <a href=""><i class="fa-regular fa-plus"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Card 8 : End-->
+            </div>
+        </div>
+    </section>
+    <!--Product Card End-->
+
+    <!--Question Start-->
+    <section class="question-section">
+        <div class="title-section-5">
+            <h3>What is Studio Shoni?</h3>
+            <p>Read our wonderfully weird story</p>
+        </div>
+        <div class="question-main">
+            <div class="question-left">
+                <div class="question-title">
+                    <h4>A community doing good</h4>
+                    <p>
+                        Etsy is a global online marketplace, where people come together to make, sell, buy, and collect
+                        unique items. We’re also a community pushing for positive change for small businesses, people,
+                        and the planet. Here are some of the ways we’re making a positive impact, together.
+                    </p>
+                </div>
+            </div>
+            <div class="question-center">
+                <div class="question-title">
+                    <h4>A community doing good</h4>
+                    <p>
+                        There’s no Etsy warehouse – just millions of people selling the things they love. We make the
+                        whole process easy, helping you connect directly with makers to find something extraordinary.
+                    </p>
+                </div>
+            </div>
+            <div class="question-right">
+                <div class="question-title">
+                    <h4>A community doing good</h4>
+                    <p>
+                        Your privacy is the highest priority of our dedicated team. And if you ever need assistance, we
+                        are always ready to step in for support.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="question-help-main">
+            <div class="question-help-top">
+                <p>Have a question? Well, we’ve got some answers.</p>
+                <a href="#">Go to Help Center</a>
+                <p>Yes! Send me exclusive offers, unique gift ideas, and personalized tips for shopping and selling on
+                    Studio Shoni.</p>
+            </div>
+            <div class="question-help-form">
+
+                <input type="text" value="Enter your mail...">
+                <button class="question-btn">Subscribe</button>
+            </div>
+        </div>
+
+        <!--Footer Start-->
+        <footer>
+
+            <div class="box-color-bottom">
+
+                <div class="box-color-footer-3">
+                    <div class="box-color-footer">
+                        <img src="img/footer.jpg" alt="">
+                    </div>
+                    <hr>
+                    <div class="footer-menu-main">
+                        <div class="shop-footer footer-tittle">
+                            <h3>Shop</h3>
+                            <ul>
+                                <a href="#">
+                                    <li>Gift cards</li>
+                                </a>
+                                <a href="#">
+                                    <li>Sitemap</li>
+                                </a>
+                                <a href="#">
+                                    <li>Etsy blog</li>
+                                </a>
+                                <a href="#">
+                                    <li>Etsy United Kingdom</li>
+                                </a>
+                                <a href="#">
+                                    <li>Etsy Germany</li>
+                                </a>
+                                <a href="#">
+                                    <li>Etsy Canada</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="sell-footer footer-tittle">
+                            <h3>Sell</h3>
+                            <ul>
+                                <a href="#">
+                                    <li>Sell on Etsy</li>
+                                </a>
+                                <a href="#">
+                                    <li>Teams</li>
+                                </a>
+                                <a href="#">
+                                    <li>Forums</li>
+                                </a>
+                                <a href="#">
+                                    <li>Affiliates</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="about-footer footer-tittle">
+                            <h3>About</h3>
+                            <ul>
+                                <a href="#">
+                                    <li>Etsy, Inc.</li>
+                                </a>
+                                <a href="#">
+                                    <li>Policies</li>
+                                </a>
+                                <a href="#">
+                                    <li>Investors</li>
+                                </a>
+                                <a href="#">
+                                    <li>Careers</li>
+                                </a>
+                                <a href="#">
+                                    <li>Press</li>
+                                </a>
+                                <a href="#">
+                                    <li>Impact</li>
+                                </a>
+                                <a href="#">
+                                    <li>Legal imprint</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="information-footer footer-tittle">
+                            <h3 style="font-size: 35px;">Studio Shoni</h3>
+                            <ul>
+                                <a href="#">
+                                    <li>Help Center</li>
+                                </a>
+                                <a href="#">
+                                    <li>Privacy settings</li>
+                                </a>
+                            </ul>
+                            <div class="soccial-footer">
+                                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-square-pinterest"></i></a>
+                                <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                            </div>
+                            <div class="map-footer">
+                                <p><a href="#">〒901-2112 <br> 沖縄県浦添市沢岻２丁目１７−1 OCCコンピュータビル</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="bottom-left-footer">
+                    <i class="fa-thin fa-earth-americas"></i>
+                    <p><i style="font-size: 15px;">© 2023 Etsy, Inc.Themes by <a href="#">CodingDungOCC</a></i></p>
+                </div>
+                <div class="bottom-right-footer">
+                    <div><i><a href="#">Terms of</a></i></div>
+                    <div><i><a href="#">Use Privacy</a></i></div>
+                    <div><i><a href="#">Interest-based ads</a></i></div>
+                    <div><i><a href="#">Regions</a></i></div>
+                </div>
+            </div>
+        </footer>
+        <!--Footer End-->
+    </section>
+    <!--Question End-->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  
+</body>
+
+</html>

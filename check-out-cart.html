@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.css">
+    <!--Fontawesome Css-->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+    <!--Custom Css-->
+    <link rel="stylesheet" href="../css/product.css">
+    <!--Jquery Js-->
+    <script src="js/jquery.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Menu Start-->
+    <div class="menu-product">
+        <div class="logo-product">
+            <a href="../index.html">Studio Shoni</a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">Subscription</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="cart-menu" id="count">
+            <a href="check-out-cart.html"><i class="fa-light fa-cart-shopping"><span></span></i></a>
+
+            <a href="#" onclick="openNav()"><i class="fa-light fa-bars"></i></a>
+        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Shop</a>
+                <a href="#">Subscription</a>
+            </div>
+        </div>
+    </div>
+    <!--Menu End-->
+    <!--Check Out Cart Start-->
+    <div class="check-out-card-main">
+        <div class="item-in-card" id="quantity">
+            <p>Item in your cart :</p><span></span>
+        </div>
+        <div class="protect-product">
+            <i class="fa-duotone fa-hand-holding-heart"></i>
+            <p>Buy confidently with Etsy's Purchase Protection program for buyers, get a full refund in the rare case
+                your item doesn't arrive, arrives damaged, or isn't as described. See eligibility</p>
+            <i class="fa-solid fa-clipboard-question" style="font-size: 15px;color: #fff;"></i>
+        </div>
+        <div class="check-out-card-body">
+            <div class="check-out-card-left" id="giohang">
+                <!--Product 1 Start-->
+                <div class="check-out-cart-item">
+                    <div class="check-out-card-item-img">
+                        <img src="img/card/1.png">
+                    </div>
+                    <div class="check-out-card-details">
+                        <div class="item-card-name">
+                            <a href="#">
+                                <h5>Set 3 of Basket Wall Decor, Personalised gift, Boho Wall Decor, Wicker Round Bowl,
+                                    Wicker
+                                    Wall Tray, Bohemian Wall Decor, Hanger Wall Plate</h5>
+                            </a>
+                            <p>Product Id : <span>085224588</span></p>
+                            <p>Price : <span style="color: crimson;">50$</span></p>
+                        </div>
+                        <div class="num-block skin-2">
+                            <div class="num-in">
+                                <span class="minus dis"></span>
+                                <input type="text" class="in-num" value="1" readonly="">
+                                <span class="plus"></span>
+                            </div>
+                        </div>
+                        <div class="check-out-card-remove-btn">
+                            <a class="remove">Remove</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--Product 1 End-->
+                <hr>
+                <!--Product 1 Start-->
+                <div class="check-out-cart-item">
+                    <div class="check-out-card-item-img">
+                        <img src="img/card/2.png">
+                    </div>
+                    <div class="check-out-card-details">
+                        <div class="item-card-name">
+                            <a href="#">
+                                <h5>Set 3 of Basket Wall Decor, Personalised gift, Boho Wall Decor, Wicker Round Bowl,
+                                    Wicker
+                                    Wall Tray, Bohemian Wall Decor, Hanger Wall Plate</h5>
+                            </a>
+                            <p>Product Id : <span>085224588</span></p>
+                            <p>Price : <span style="color: crimson;">50$</span></p>
+                        </div>
+                        <div class="num-block skin-2">
+                            <div class="num-in">
+                                <span class="minus dis"></span>
+                                <input type="text" class="in-num" value="1" readonly="">
+                                <span class="plus"></span>
+                            </div>
+                        </div>
+                        <div class="check-out-card-remove-btn">
+                            <a class="remove">Remove</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--Product 1 End-->
+                <hr>
+                <!--Product 1 Start-->
+                <div class="check-out-cart-item">
+                    <div class="check-out-card-item-img">
+                        <img src="img/card/3.png">
+                    </div>
+                    <div class="check-out-card-details">
+                        <div class="item-card-name">
+                            <a href="#">
+                                <h5>Set 3 of Basket Wall Decor, Personalised gift, Boho Wall Decor, Wicker Round Bowl,
+                                    Wicker
+                                    Wall Tray, Bohemian Wall Decor, Hanger Wall Plate</h5>
+                            </a>
+                            <p>Product Id : <span>085224588</span></p>
+                            <p>Price : <span style="color: crimson;">50$</span></p>
+                        </div>
+                        <div class="num-block skin-2">
+                            <div class="num-in">
+                                <span class="minus dis"></span>
+                                <input type="text" class="in-num" value="1" readonly="">
+                                <span class="plus"></span>
+                            </div>
+                        </div>
+                        <div class="check-out-card-remove-btn">
+                            <a class="remove">Remove</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--Product 1 End-->
+
+            </div>
+            <div class="check-out-card-right" id="quantity-all">
+                <div class="top-check-out-payment-title">
+                    <h5>How you'll pay</h5>
+                </div>
+                <div class="card-payment-img">
+                    <img src="img/JCB.png" alt="">
+                    <img src="img/ApplePay.png" alt="">
+                    <img src="img/Payoneer.png" alt="">
+                    <img src="img/MasterCard.png" alt="">
+                </div>
+                <div class="item-totals">
+                    <p>Item(s) total</p>
+                    <p><span style="color: crimson;" ></span></p>
+                </div>
+                <hr>
+                <div class="suptotals-ship">
+                    <div class="suptotal">
+                        <p>Subtotal</p>
+                        <p><span style="color: crimson;">5$</span></p>
+                    </div>
+                    <div class="shiping">
+                        <p>Shipping</p>
+                        <p><span style="color: crimson;">100$</span></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="total-price">
+                    <p>Total (1 item)</p>
+                    <p><span style="color: crimson;">205$</span></p>
+                </div>
+                <div class="check-card-btn">
+                    <button class="check-out-card-btn">Proceed to checkout</button>
+                    <p>Local taxes included (where applicable) <br>
+                        * Additional duties and taxes may apply</p>
+                </div>
+            </div>
+        </div>
+        <div class="check-out-cart-title-bottom">
+            <p>Etsy offsets carbon emissions from every delivery</p>
+        </div>
+    </div>
+    <!--Check Out Cart End-->
+    <!--Footer Start-->
+    <footer>
+
+        <div class="box-color-bottom">
+
+            <div class="box-color-footer-3">
+                <div class="box-color-footer">
+                    <img src="../img/footer.jpg" alt="">
+                </div>
+                <div class="footer-menu-main">
+                    <div class="shop-footer footer-tittle">
+                        <h3>Shop</h3>
+                        <ul>
+                            <a href="#">
+                                <li>Gift cards</li>
+                            </a>
+                            <a href="#">
+                                <li>Sitemap</li>
+                            </a>
+                            <a href="#">
+                                <li>Etsy blog</li>
+                            </a>
+                            <a href="#">
+                                <li>Etsy United Kingdom</li>
+                            </a>
+                            <a href="#">
+                                <li>Etsy Germany</li>
+                            </a>
+                            <a href="#">
+                                <li>Etsy Canada</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="sell-footer footer-tittle">
+                        <h3>Sell</h3>
+                        <ul>
+                            <a href="#">
+                                <li>Sell on Etsy</li>
+                            </a>
+                            <a href="#">
+                                <li>Teams</li>
+                            </a>
+                            <a href="#">
+                                <li>Forums</li>
+                            </a>
+                            <a href="#">
+                                <li>Affiliates</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="about-footer footer-tittle">
+                        <h3>About</h3>
+                        <ul>
+                            <a href="#">
+                                <li>Etsy, Inc.</li>
+                            </a>
+                            <a href="#">
+                                <li>Policies</li>
+                            </a>
+                            <a href="#">
+                                <li>Investors</li>
+                            </a>
+                            <a href="#">
+                                <li>Careers</li>
+                            </a>
+                            <a href="#">
+                                <li>Press</li>
+                            </a>
+                            <a href="#">
+                                <li>Impact</li>
+                            </a>
+                            <a href="#">
+                                <li>Legal imprint</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="information-footer footer-tittle">
+                        <h3 style="font-size: 35px;">Studio Shoni</h3>
+                        <ul>
+                            <a href="#">
+                                <li>Help Center</li>
+                            </a>
+                            <a href="#">
+                                <li>Privacy settings</li>
+                            </a>
+                        </ul>
+                        <div class="soccial-footer">
+                            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-pinterest"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                        </div>
+                        <div class="map-footer">
+                            <p><a href="#">〒901-2112 <br> 沖縄県浦添市沢岻２丁目１７−1 OCCコンピュータビル</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="bottom-left-footer">
+                <i class="fa-thin fa-earth-americas"></i>
+                <p><i style="font-size: 15px;">© 2023 Etsy, Inc.Themes by <a href="#">CodingDungOCC</a></i></p>
+            </div>
+            <div class="bottom-right-footer">
+                <div><i><a href="#">Terms of</a></i></div>
+                <div><i><a href="#">Use Privacy</a></i></div>
+                <div><i><a href="#">Interest-based ads</a></i></div>
+                <div><i><a href="#">Regions</a></i></div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer End-->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-thuvien.js"></script>
+</body>
+
+</html>
